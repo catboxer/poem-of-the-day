@@ -4,9 +4,23 @@ async function getPoem(){
   return(poem.slice(0,1))
 }
 
+// async function getProverb(){
+//   const response = await 
+//   fetch('https://quotes-and-proverbs.p.rapidapi.com/rapidapiquotes?r=love',{
+//   method: "GET",
+//   headers:{
+// 	"x-rapidapi-host": "quotes-and-proverbs.p.rapidapi.com",
+// 	"x-rapidapi-key": "20eef16b7emsh2807f785e2d0f77p1955d5jsnf3f70107b2e5",
+// 	"useQueryString": true
+// }});
+//   const proverb = await response.json()
+//   console.log(proverb)
+// }
+// getProverb().catch(error => {
+//   error.message; 'An error has occurred: 404'
+// });
 
-getPoem().then(poem => {
-
+const onePoem = getPoem().then(poem => {
 document.body.innerHTML= 
 `<h1 class='title'>Poem Of The Day</h1>
 <div class="one-poem">
@@ -16,4 +30,4 @@ document.body.innerHTML=
   </div>`;
 })
 
-window.document.addEventListener("DOMContentLoaded", getPoem);
+window.document.addEventListener("DOMContentLoaded", onePoem);
