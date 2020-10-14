@@ -10,7 +10,7 @@ async function getPoem(){
 //   method: "GET",
 //   headers:{
 // 	"x-rapidapi-host": "quotes-and-proverbs.p.rapidapi.com",
-// 	"x-rapidapi-key": "20eef16b7emsh2807f785e2d0f77p1955d5jsnf3f70107b2e5",
+// 	"x-rapidapi-key": `${api-key}`
 // 	"useQueryString": true
 // }});
 //   const proverb = await response.json()
